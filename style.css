@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.839), rgba(0, 0, 0, 0.449), rgba(0, 0, 0, 0.993)), url(12.jpg);
+    font-family: sans-serif;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2m;
+    letter-spacing: 2px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 11px;
+    position: relative;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid rgb(165, 141, 141);
+    transition: 0.4s linear;
+}
+
+.menu a:hover:before {
+    width: 90%;
+}
+
+.h-txt {
+    max-width: 500px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* text-align: center; */
+    color: rgba(255, 255, 255, 0.819);
+}
+
+.h-txt h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+
+}
+
+.n-s {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    color: rgba(255, 255, 255, 0.766);
+    transition: 2s;
+
+}
+.n-s:hover{
+    transform: scale(1.3);
+    z-index: 4;
+}
+
+
+.n-s h2 {
+    font-size: 2.3em;
+    margin-bottom: 20%;
+}
+
+#box {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+
+}
+
+.box1 {
+    width: 24%;
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+
+
+.box2 {
+    width: 24%;
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+
+.box3 {
+    width: 24%;
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    /* background:linear-gradient(rgb(0, 0, 0),rgba(2, 2, 2, 0.893)); */
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+
+}
+
+#main h1 {
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 40%;
+    top: 110%;
+}
+
+#bs {
+    width: 95%;
+    height: 70%;
+    /* background-color: aliceblue; */
+    position: absolute;
+    top: 120%;
+    left: 2.10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dn1 {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    margin-right: 15px;
+    border-radius: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(bl.jpg);
+    background-size: cover;
+   transition: 1s;
+
+}
+.dn1:hover{
+     transform: scale(1.2);
+     z-index: 1;
+}
+.dn1 h3 {
+    font-size: 2.1em;
+    color: whitesmoke;
+    position: absolute;
+    left: 80px;
+    bottom: 3%;
+}
+
+.dn2 {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    margin-right: 15px;
+    border-radius: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(tower.jpg);
+    background-size: cover;
+    transition: 1s;
+
+
+}
+.dn2:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+.dn2 h4 {
+    font-size: 2.1em;
+    color: whitesmoke;
+    position: absolute;
+    top: 86%;
+    left: 32%;
+
+}
+
+.dn3 {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    margin-right: 15px;
+    border-radius: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(download.jpg);
+    background-size: cover;
+    transition: 1s;
+
+}
+.dn3:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.dn3 h5 {
+    font-size: 2.1em;
+    color: whitesmoke;
+    position: absolute;
+    top: 86%;
+    left: 58%;
+
+}
+
+.dn4 {
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    margin-right: 15px;
+    border-radius: 10%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(mto.jpg);
+    background-size: cover;
+    transition: 3s;
+
+
+}
+.dn4:hover{
+
+    transform: scale(1.1);
+    z-index: 1;
+    
+}
+
+
+.dn4 h6 {
+    font-size: 2.1em;
+    color: whitesmoke;
+    position: absolute;
+    top: 86%;
+    left: 83%;
+
+
+}
+
+
+#main2 {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.978), rgba(0, 0, 0, 0.488), rgba(0, 0, 0, 0.935)), url(t2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+#main2 h1 {
+    font-size: 80px;
+    color: rgba(245, 245, 245, 0.645);
+    width: 45%;
+    position: absolute;
+    left: 10%;
+    top: 220%;
+}
+
+.icon i {
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.737);
+    position: absolute;
+    top: 266%;
+    left: 10%;
+}
+
+#main2 h2 {
+    color: rgba(255, 255, 255, 0.665);
+    font-size: 15px;
+    position: absolute;
+    top: 267.5%;
+    left: 13%;
+
+}
+
+#main2 p {
+    width: 35%;
+    color: rgba(245, 245, 245, 0.674);
+    font-size: 10px;
+    position: absolute;
+    top: 276%;
+    left: 10%;
+}
+
+#main2>img {
+    width: 14%;
+    border-radius: 10%;
+    border: solid rgba(245, 245, 245, 0.579);
+    position: absolute;
+
+    left: 50%;
+    top: 266%;
+    transition: 1s;
+}
+#main2>img:hover {
+      transform: scale(1.2);
+      z-index: 1s;
+}
+
+#image>img {
+    width: 12%;
+    border-radius: 10%;
+    border: solid rgba(245, 245, 245, 0.579);
+    position: absolute;
+    top: 266.2%;
+    left: 66%;
+    transition: 1s;
+
+
+}
+#image>img:hover{
+    transform: scale(1.2);
+    z-index: 1s;
+}
